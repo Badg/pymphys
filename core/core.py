@@ -1,14 +1,6 @@
 import pandas as pd
 import numpy as np
 
-def remove_duplicates(lst):
-    """ Removes duplicates in a list, preserving list order."""
-    unique = []
-    for ii in lst:
-        if ii not in unique:
-            unique.append(ii)
-    return unique
-
 def detect_broken_pattern(iterable, threshold=1):
     """ Examines a 1d iterable for pattern discontinuities.
     
