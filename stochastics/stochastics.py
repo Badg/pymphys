@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from scipy.stats import gmean
-from pyDOE import lhs
+# from pyDOE import lhs
 import random as rand
 import math
 
@@ -165,4 +165,4 @@ def lhs_scaled(var_min, var_max, n):
     spread = var_max - var_min
 
     # Get linear hypercube sample and scale it, then return
-    return var_min + spread * lhs(k, n, criterion='maximin', iterations=100)
+    #return var_min + spread * lhs(k, n, criterion='maximin', iterations=100)
